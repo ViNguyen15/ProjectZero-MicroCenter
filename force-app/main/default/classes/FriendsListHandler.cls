@@ -1,7 +1,5 @@
 public class FriendsListHandler {
     public static void createMirrors(List<Friends_List__c> input) {
-    
-        //test comment more and more
 
         List<Friends_List__c> output = duplicatesList(input, true);//new duplicates        
         if (output.Size() > 0) {Insert output;}
