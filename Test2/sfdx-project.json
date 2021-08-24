@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "Test2",
+  "namespace": "",
+  "sfdcLoginUrl": "https://curious-goat-do4joe-dev-ed.my.salesforce.com/",
+  "sourceApiVersion": "52.0"
+}
