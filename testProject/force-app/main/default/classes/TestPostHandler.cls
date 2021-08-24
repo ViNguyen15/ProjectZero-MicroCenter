@@ -96,12 +96,15 @@ public class TestPostHandler {
         List<Contact> toInsert = new List<Contact>{new Contact(lastname = 'test', Banned__c = true)};
         //Insert toInsert;
         PostHandler.fptInner(toInsert, refID);
+
+        /*
         List<Contact> existing = [SELECT OwnerID FROM Contact WHERE lastname = 'test'];
         
         List<User> modManager = [SELECT id, isActive FROM User WHERE alias = 'ethe' LIMIT 1];
         System.assert(modManager.Size() == 1);
-        System.assert(!modManager[0].isActive);
-        
+        System.assert(modManager[0].isActive);
+        */
+
         System.assertEquals(toInsert[0].OwnerID, refID);
         Test.stopTest();
     }
@@ -116,10 +119,21 @@ public class TestPostHandler {
         
         System.assertNotEquals(existing[0].OwnerID, refID);
     }
-    
+
     @isTest
     static void TBflaggedContacts() {
+        Test.startTest();
+        ID refID = ID.valueOf('0055e000006U183AAC');
+        List<Contact> toInsert = new List<Contact>();
+        for (Integer i = 0; i < 200; i++) {
+            toInsert.add(new Contact(lastname = 'test ' + i, Banned__c = true));
+        }
+        PostHandler.fptInner(toInsert, refID);
+        for (Integer i = 0; i < 200; i++) {
+            System.assertEquals(toInsert[i].OwnerID, refID);
+        }
         
+        Test.stopTest();
     }
     
     
