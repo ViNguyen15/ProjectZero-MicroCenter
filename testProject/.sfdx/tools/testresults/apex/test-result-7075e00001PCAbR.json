@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "outcome": "Skipped",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 0,
+    "skipped": 1,
+    "passRate": "0%",
+    "failRate": "0%",
+    "skipRate": "100%",
+    "testStartTime": "Tue Aug 24 2021 2:28:23 PM",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 3092,
+    "hostname": "https://resilient-unicorn-yxre7-dev-ed.my.salesforce.com",
+    "orgId": "00D5e000005A1scEAC",
+    "username": "awensley@resilient-unicorn-yxre7.com",
+    "testRunId": "7075e00001PCAbR",
+    "userId": "0055e000006TiBJAA0"
+  },
+  "tests": [
+    {
+      "id": "07M5e00000159gJEAQ",
+      "queueItemId": "7095e000000As2sAAC",
+      "stackTrace": null,
+      "message": "Method TPcrudMirrors does not exist in the the apex class with Id :01p5e00000a1IBN",
+      "asyncApexJobId": "7075e00001PCAbRAAX",
+      "methodName": "TPcrudMirrors",
+      "outcome": "Skip",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 0,
+      "testTimestamp": "2021-08-24T18:28:26.000+0000",
+      "fullName": "TestFriendsListHandler.TPcrudMirrors",
+      "diagnostic": {
+        "exceptionMessage": "Method TPcrudMirrors does not exist in the the apex class with Id :01p5e00000a1IBN",
+        "exceptionStackTrace": null,
+        "compileProblem": ""
+      }
+    }
+  ]
+}

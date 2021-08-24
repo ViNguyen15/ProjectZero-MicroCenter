@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Aug 24 2021 2:39:52 PM",
+    "testExecutionTimeInMs": 10623,
+    "testTotalTimeInMs": 10623,
+    "commandTimeInMs": 162,
+    "hostname": "https://resilient-unicorn-yxre7-dev-ed.my.salesforce.com",
+    "orgId": "00D5e000005A1scEAC",
+    "username": "awensley@resilient-unicorn-yxre7.com",
+    "testRunId": "7075e00001PCE3b",
+    "userId": "0055e000006TiBJAA0"
+  },
+  "tests": [
+    {
+      "id": "07M5e00000159hqEAA",
+      "queueItemId": "7095e000000As3RAAS",
+      "stackTrace": "Class.TestFriendsListHandler.TBupdateMirrors: line 59, column 1",
+      "message": "System.AssertException: Assertion Failed: Expected: (50, 0), Actual: (64, 0)",
+      "asyncApexJobId": "7075e00001PCE3bAAH",
+      "methodName": "TBupdateMirrors",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 10623,
+      "testTimestamp": "2021-08-24T18:39:54.000+0000",
+      "fullName": "TestFriendsListHandler.TBupdateMirrors",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed: Expected: (50, 0), Actual: (64, 0)",
+        "exceptionStackTrace": "Class.TestFriendsListHandler.TBupdateMirrors: line 59, column 1",
+        "className": "TestFriendsListHandler",
+        "compileProblem": "",
+        "lineNumber": 59,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

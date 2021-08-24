@@ -1,0 +1,118 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 5,
+    "passing": 5,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Aug 24 2021 2:46:29 PM",
+    "testExecutionTimeInMs": 24019,
+    "testTotalTimeInMs": 24019,
+    "commandTimeInMs": 402,
+    "hostname": "https://resilient-unicorn-yxre7-dev-ed.my.salesforce.com",
+    "orgId": "00D5e000005A1scEAC",
+    "username": "awensley@resilient-unicorn-yxre7.com",
+    "testRunId": "7075e00001PCGHp",
+    "userId": "0055e000006TiBJAA0"
+  },
+  "tests": [
+    {
+      "id": "07M5e00000159njEAA",
+      "queueItemId": "7095e000000As3gAAC",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCGHpAAP",
+      "methodName": "TBcrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 13389,
+      "testTimestamp": "2021-08-24T18:46:32.000+0000",
+      "fullName": "TestFriendsListHandler.TBcrudMirrors"
+    },
+    {
+      "id": "07M5e00000159nkEAA",
+      "queueItemId": "7095e000000As3gAAC",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCGHpAAP",
+      "methodName": "TBupdateMirrors",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 9709,
+      "testTimestamp": "2021-08-24T18:46:45.000+0000",
+      "fullName": "TestFriendsListHandler.TBupdateMirrors"
+    },
+    {
+      "id": "07M5e00000159nlEAA",
+      "queueItemId": "7095e000000As3gAAC",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCGHpAAP",
+      "methodName": "TPcrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 489,
+      "testTimestamp": "2021-08-24T18:46:55.000+0000",
+      "fullName": "TestFriendsListHandler.TPcrudMirrors"
+    },
+    {
+      "id": "07M5e00000159nmEAA",
+      "queueItemId": "7095e000000As3gAAC",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCGHpAAP",
+      "methodName": "TRUcrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 259,
+      "testTimestamp": "2021-08-24T18:46:56.000+0000",
+      "fullName": "TestFriendsListHandler.TRUcrudMirrors"
+    },
+    {
+      "id": "07M5e00000159nnEAA",
+      "queueItemId": "7095e000000As3gAAC",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCGHpAAP",
+      "methodName": "TScrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 173,
+      "testTimestamp": "2021-08-24T18:46:56.000+0000",
+      "fullName": "TestFriendsListHandler.TScrudMirrors"
+    }
+  ]
+}

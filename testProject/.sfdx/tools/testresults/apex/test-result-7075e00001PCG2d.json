@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Aug 24 2021 2:46:02 PM",
+    "testExecutionTimeInMs": 11933,
+    "testTotalTimeInMs": 11933,
+    "commandTimeInMs": 168,
+    "hostname": "https://resilient-unicorn-yxre7-dev-ed.my.salesforce.com",
+    "orgId": "00D5e000005A1scEAC",
+    "username": "awensley@resilient-unicorn-yxre7.com",
+    "testRunId": "7075e00001PCG2d",
+    "userId": "0055e000006TiBJAA0"
+  },
+  "tests": [
+    {
+      "id": "07M5e00000159neEAA",
+      "queueItemId": "7095e000000As3bAAC",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCG2dAAH",
+      "methodName": "TBupdateMirrors",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 11933,
+      "testTimestamp": "2021-08-24T18:46:04.000+0000",
+      "fullName": "TestFriendsListHandler.TBupdateMirrors"
+    }
+  ]
+}

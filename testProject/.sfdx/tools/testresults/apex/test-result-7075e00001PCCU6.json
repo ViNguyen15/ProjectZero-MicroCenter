@@ -1,0 +1,487 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 24,
+    "passing": 23,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "96%",
+    "failRate": "4%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Aug 24 2021 2:34:56 PM",
+    "testExecutionTimeInMs": 43062,
+    "testTotalTimeInMs": 43062,
+    "commandTimeInMs": 7122,
+    "hostname": "https://resilient-unicorn-yxre7-dev-ed.my.salesforce.com",
+    "orgId": "00D5e000005A1scEAC",
+    "username": "awensley@resilient-unicorn-yxre7.com",
+    "testRunId": "7075e00001PCCU6",
+    "userId": "0055e000006TiBJAA0"
+  },
+  "tests": [
+    {
+      "id": "07M5e00000159hHEAQ",
+      "queueItemId": "7095e000000As3CAAS",
+      "stackTrace": "Class.System.Test.startTest: line 15, column 1\nClass.TestFriendsListHandler.TBcrudMirrors: line 48, column 1",
+      "message": "System.FinalException: Testing already started",
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TBcrudMirrors",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 13851,
+      "testTimestamp": "2021-08-24T18:34:58.000+0000",
+      "fullName": "TestFriendsListHandler.TBcrudMirrors",
+      "diagnostic": {
+        "exceptionMessage": "System.FinalException: Testing already started",
+        "exceptionStackTrace": "Class.System.Test.startTest: line 15, column 1\nClass.TestFriendsListHandler.TBcrudMirrors: line 48, column 1",
+        "className": "System",
+        "compileProblem": "",
+        "lineNumber": 15,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M5e00000159hIEAQ",
+      "queueItemId": "7095e000000As3CAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TPcrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 613,
+      "testTimestamp": "2021-08-24T18:35:12.000+0000",
+      "fullName": "TestFriendsListHandler.TPcrudMirrors"
+    },
+    {
+      "id": "07M5e00000159hJEAQ",
+      "queueItemId": "7095e000000As3CAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TRUcrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 269,
+      "testTimestamp": "2021-08-24T18:35:12.000+0000",
+      "fullName": "TestFriendsListHandler.TRUcrudMirrors"
+    },
+    {
+      "id": "07M5e00000159hKEAQ",
+      "queueItemId": "7095e000000As3CAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TScrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 181,
+      "testTimestamp": "2021-08-24T18:35:13.000+0000",
+      "fullName": "TestFriendsListHandler.TScrudMirrors"
+    },
+    {
+      "id": "07M5e00000159h8EAA",
+      "queueItemId": "7095e000000As3DAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TNflaggedContacts",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IYgAAM",
+        "name": "TestPostHandler",
+        "namespacePrefix": null,
+        "fullName": "TestPostHandler"
+      },
+      "runTime": 66,
+      "testTimestamp": "2021-08-24T18:34:59.000+0000",
+      "fullName": "TestPostHandler.TNflaggedContacts"
+    },
+    {
+      "id": "07M5e00000159h9EAA",
+      "queueItemId": "7095e000000As3DAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TNflaggedPostTransfer",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IYgAAM",
+        "name": "TestPostHandler",
+        "namespacePrefix": null,
+        "fullName": "TestPostHandler"
+      },
+      "runTime": 128,
+      "testTimestamp": "2021-08-24T18:34:59.000+0000",
+      "fullName": "TestPostHandler.TNflaggedPostTransfer"
+    },
+    {
+      "id": "07M5e00000159hAEAQ",
+      "queueItemId": "7095e000000As3DAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TPflaggedContacts",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IYgAAM",
+        "name": "TestPostHandler",
+        "namespacePrefix": null,
+        "fullName": "TestPostHandler"
+      },
+      "runTime": 18,
+      "testTimestamp": "2021-08-24T18:34:59.000+0000",
+      "fullName": "TestPostHandler.TPflaggedContacts"
+    },
+    {
+      "id": "07M5e00000159hBEAQ",
+      "queueItemId": "7095e000000As3DAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TPflaggedPostTransfer",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IYgAAM",
+        "name": "TestPostHandler",
+        "namespacePrefix": null,
+        "fullName": "TestPostHandler"
+      },
+      "runTime": 13647,
+      "testTimestamp": "2021-08-24T18:34:59.000+0000",
+      "fullName": "TestPostHandler.TPflaggedPostTransfer"
+    },
+    {
+      "id": "07M5e00000159h7EAA",
+      "queueItemId": "7095e000000As3DAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TBflaggedContacts",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IYgAAM",
+        "name": "TestPostHandler",
+        "namespacePrefix": null,
+        "fullName": "TestPostHandler"
+      },
+      "runTime": 3,
+      "testTimestamp": "2021-08-24T18:34:59.000+0000",
+      "fullName": "TestPostHandler.TBflaggedContacts"
+    },
+    {
+      "id": "07M5e00000159hCEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TBNhandleFriendsList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 2437,
+      "testTimestamp": "2021-08-24T18:34:58.000+0000",
+      "fullName": "TestDuplicationPrevention.TBNhandleFriendsList"
+    },
+    {
+      "id": "07M5e00000159hDEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TBNhandleGroupMember",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 2617,
+      "testTimestamp": "2021-08-24T18:35:01.000+0000",
+      "fullName": "TestDuplicationPrevention.TBNhandleGroupMember"
+    },
+    {
+      "id": "07M5e00000159hEEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TBNhandleLikeList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 3029,
+      "testTimestamp": "2021-08-24T18:35:03.000+0000",
+      "fullName": "TestDuplicationPrevention.TBNhandleLikeList"
+    },
+    {
+      "id": "07M5e00000159hFEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TBPhandleFriendsList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 1684,
+      "testTimestamp": "2021-08-24T18:35:06.000+0000",
+      "fullName": "TestDuplicationPrevention.TBPhandleFriendsList"
+    },
+    {
+      "id": "07M5e00000159hGEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TBPhandleGroupMember",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 1558,
+      "testTimestamp": "2021-08-24T18:35:08.000+0000",
+      "fullName": "TestDuplicationPrevention.TBPhandleGroupMember"
+    },
+    {
+      "id": "07M5e00000159hMEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TBPhandleLikeList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 2055,
+      "testTimestamp": "2021-08-24T18:35:10.000+0000",
+      "fullName": "TestDuplicationPrevention.TBPhandleLikeList"
+    },
+    {
+      "id": "07M5e00000159hNEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TNhandleFriendsList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 71,
+      "testTimestamp": "2021-08-24T18:35:12.000+0000",
+      "fullName": "TestDuplicationPrevention.TNhandleFriendsList"
+    },
+    {
+      "id": "07M5e00000159hOEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TNhandleGroupMember",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 49,
+      "testTimestamp": "2021-08-24T18:35:12.000+0000",
+      "fullName": "TestDuplicationPrevention.TNhandleGroupMember"
+    },
+    {
+      "id": "07M5e00000159hPEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TNhandleLikeList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 262,
+      "testTimestamp": "2021-08-24T18:35:12.000+0000",
+      "fullName": "TestDuplicationPrevention.TNhandleLikeList"
+    },
+    {
+      "id": "07M5e00000159hQEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TPhandleFriendsList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 88,
+      "testTimestamp": "2021-08-24T18:35:13.000+0000",
+      "fullName": "TestDuplicationPrevention.TPhandleFriendsList"
+    },
+    {
+      "id": "07M5e00000159hREAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TPhandleGroupMember",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 75,
+      "testTimestamp": "2021-08-24T18:35:13.000+0000",
+      "fullName": "TestDuplicationPrevention.TPhandleGroupMember"
+    },
+    {
+      "id": "07M5e00000159hSEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TPhandleLikeList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 149,
+      "testTimestamp": "2021-08-24T18:35:13.000+0000",
+      "fullName": "TestDuplicationPrevention.TPhandleLikeList"
+    },
+    {
+      "id": "07M5e00000159hTEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TRUhandleFriendsList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 67,
+      "testTimestamp": "2021-08-24T18:35:13.000+0000",
+      "fullName": "TestDuplicationPrevention.TRUhandleFriendsList"
+    },
+    {
+      "id": "07M5e00000159hUEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TRUhandleGroupMember",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 50,
+      "testTimestamp": "2021-08-24T18:35:13.000+0000",
+      "fullName": "TestDuplicationPrevention.TRUhandleGroupMember"
+    },
+    {
+      "id": "07M5e00000159hVEAQ",
+      "queueItemId": "7095e000000As3EAAS",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001PCCU6AAP",
+      "methodName": "TRUhandleLikeList",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p5e00000a1IVcAAM",
+        "name": "TestDuplicationPrevention",
+        "namespacePrefix": null,
+        "fullName": "TestDuplicationPrevention"
+      },
+      "runTime": 95,
+      "testTimestamp": "2021-08-24T18:35:13.000+0000",
+      "fullName": "TestDuplicationPrevention.TRUhandleLikeList"
+    }
+  ]
+}

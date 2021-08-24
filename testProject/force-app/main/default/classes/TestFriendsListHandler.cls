@@ -5,14 +5,14 @@ public class TestFriendsListHandler {
     static void setup() {
         List<Contact> testContacts = new List<Contact>();
         
-        for (Integer i = 0; i < 500; i++) { //needs to be greater than two bulk tests combined
+        for (Integer i = 0; i < 500; i++) { //500 because needs to be greater than two bulk tests combined
             testContacts.add(new Contact(lastname = ('name ' + i)));
         }
         Insert testContacts;
     }
     
     @isTest
-    static void TPcreateMirrors() {
+    static void TPcrudMirrors() {
         Test.startTest();
         
         Insert createRecords(1, 1);
@@ -26,7 +26,7 @@ public class TestFriendsListHandler {
     }
     
     @isTest
-    static void TScreateMirrors() {
+    static void TScrudMirrors() {
         Test.startTest();
         
         Insert createRecords(1, 0);
@@ -37,22 +37,42 @@ public class TestFriendsListHandler {
         Test.stopTest();
     }
     
-    @isTest//takes too much cpu time to finish
-    static void TBcreateMirrors() {
+    @isTest//takes excessive cpu time, is at least O(n^2)
+    static void TBcrudMirrors() {
         Test.startTest();
-        /*
+        
         Insert createRecords(200, 175);
         System.assertEquals(new List<Integer>{400, 175}, tallyAcceptedAndNot());
-        Update updateRecords();
-        System.assertEquals(new List<Integer>{750, 0}, tallyAcceptedAndNot());
-		Delete deleteRecords(200);
-		System.assertEquals(new List<Integer>{350, 0}, tallyAcceptedAndNot());
-        */
         Test.stopTest();
     }
+
+    @isTest
+    static void TBupdateMirrors() {
+        
+        Test.startTest();
+        Insert createRecords(200, 100);
+        Update updateRecords();
+        System.assertEquals(new List<Integer>{600, 0}, tallyAcceptedAndNot());
+
+        Test.stopTest();
+    }
+
+
+    @isTest
+    static void TBdeleteMirrors() {
+        Test.startTest();
+
+        Insert createRecords(200, 100);
+		Delete deleteRecords(175);
+		System.assertEquals(new List<Integer>{50, 100}, tallyAcceptedAndNot());
+        
+        Test.stopTest();
+    }
+
+
     
-    @isTest//use more specific exception
-    static void TRUcreateMirrors() {
+    @isTest//could use more specific exception
+    static void TRUcrudMirrors() {
         Test.startTest();
         
         Insert createRecords(1, 1);
@@ -92,7 +112,7 @@ public class TestFriendsListHandler {
     }
     
     static List<Friends_List__c> createRecords(Integer numAccepted, Integer numUnaccepted) {
-        List<Contact> temp = [SELECT lastname FROM Contact];
+        List<Contact> temp = [SELECT lastname FROM Contact ORDER BY lastname];
         List<Friends_List__c> inputRecords = new List<Friends_List__c>();
         
         for (Integer i = 0; i < numAccepted; i++) {
@@ -119,10 +139,11 @@ public class TestFriendsListHandler {
     
     static List<Friends_List__c> deleteRecords(Integer numToDelete) {
         List<Friends_List__c> toDelete = new List<Friends_List__c>();
-        List<Friends_List__c> first = [SELECT id FROM Friends_List__c WHERE RequestAccepted__c = true LIMIT 1];
-        
+        //List<Friends_List__c> first = [SELECT id FROM Friends_List__c WHERE RequestAccepted__c = true ORDER BY lastname LIMIT 1];
+        List<Contact>  first = [SELECT id FROM Contact WHERE lastname = 'name 0'];
+
         ID refID = first[0].id; //Contact1__C = :refID AND 
-        List<Friends_List__c> existing = [SELECT RequestAccepted__c FROM Friends_List__c WHERE RequestAccepted__c = true];
+        List<Friends_List__c> existing = [SELECT RequestAccepted__c FROM Friends_List__c WHERE Contact1__C = :refID AND RequestAccepted__c = true];
         for (Integer i = 0; i < numToDelete; i++) {
             toDelete.add(existing[i]);
         }
