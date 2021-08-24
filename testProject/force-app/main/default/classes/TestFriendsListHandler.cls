@@ -107,6 +107,7 @@ public class TestFriendsListHandler {
     static List<Friends_List__c> updateRecords() {
         List<Friends_List__c> existing = [SELECT RequestAccepted__c FROM Friends_List__c];
         List<Friends_List__c> updateRecords = new List<Friends_List__c>();
+
         for (Friends_List__c current : existing) {
             if (current.RequestAccepted__c == false) {
                 current.RequestAccepted__c = true;
@@ -119,6 +120,7 @@ public class TestFriendsListHandler {
     static List<Friends_List__c> deleteRecords(Integer numToDelete) {
         List<Friends_List__c> toDelete = new List<Friends_List__c>();
         List<Friends_List__c> first = [SELECT id FROM Friends_List__c WHERE RequestAccepted__c = true LIMIT 1];
+        
         ID refID = first[0].id; //Contact1__C = :refID AND 
         List<Friends_List__c> existing = [SELECT RequestAccepted__c FROM Friends_List__c WHERE RequestAccepted__c = true];
         for (Integer i = 0; i < numToDelete; i++) {
