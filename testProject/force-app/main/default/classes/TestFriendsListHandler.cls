@@ -33,12 +33,14 @@ public class TestFriendsListHandler {
         System.assertEquals(new List<Integer>{2, 0}, tallyAcceptedAndNot());
         Update updateRecords();
         System.assertEquals(new List<Integer>{2, 0}, tallyAcceptedAndNot());
+        Delete deleteRecords(1);
+        System.assertEquals(new List<Integer>{0, 0}, tallyAcceptedAndNot());
         
         Test.stopTest();
     }
     
     @isTest//takes excessive cpu time, is at least O(n^2)
-    static void TBcrudMirrors() {
+    static void TBcreateMirrors() {
         Test.startTest();
         
         Insert createRecords(200, 175);
