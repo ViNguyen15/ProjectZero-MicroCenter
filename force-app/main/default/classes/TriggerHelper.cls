@@ -84,4 +84,23 @@ public with sharing class TriggerHelper {
         }
         Update cartList;
     }
+
+    //Updates shopping cart's "Order_is_Ready__c" field based on whether or not all of the pizzas in it is finished.
+
+    public static void checkIfOrderIsReady(){
+        List<Pizza__C> pizzaList = [SELECT id, isFinished__c FROM Pizza__C];
+        List<shopping_cart__c> cartList = [SELECT id, Order_is_Ready__c FROM Shopping_cart__c];
+        //Carts are removed from cartList if any of their pizzas is not ready
+        for (Pizza__c currPizza : pizzaList){
+            for (Shopping_cart__c currCart : cartList){
+                if (currPizza.shopping_cart__c = currCart.id && !currPizza.isFinished__c){
+                    cartList.remove(currCart);
+                }
+                currCart.Order_is_Ready__c = true;
+            }
+        }
+        
+        update cartList;
+
+    }
 }
