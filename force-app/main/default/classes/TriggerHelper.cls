@@ -66,12 +66,11 @@ public with sharing class TriggerHelper {
     public static void updateShoppingCart(list<pizza__c> triggerlist, map<ID, pizza__c> triggermap){
         Map<ID, Decimal> pricedifferences = new Map<ID, Decimal>();
         for (pizza__c toAdjust : triggerlist){
-            if (Trigger.isInsert){
+            if (Trigger.isInsert || Trigger.isUndelete){
                 pricedifferences.put(toAdjust.shopping_cart__c, toAdjust.price__c);
             } else if (Trigger.isDelete){
                 pricedifferences.put(toAdjust.shopping_cart__c, (toAdjust.price__c * -1));
-            }
-            else{
+            } else {
                 if (toAdjust.price__c != triggermap.get(toAdjust.id).price__c){
                     pricedifferences.put(toAdjust.shopping_cart__c, toAdjust.price__c - triggermap.get(toAdjust.id).price__c);
                 }

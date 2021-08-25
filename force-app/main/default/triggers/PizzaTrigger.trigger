@@ -22,7 +22,7 @@ trigger PizzaTrigger on Pizza__C (before insert, before update, before delete, a
         }
         //TODO: Update cart when pizza is undeleted
         when AFTER_UNDELETE {
-            
+            TriggerHelper.updateShoppingCart(Trigger.new, Trigger.newMap);
         }
     }
 
