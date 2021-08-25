@@ -68,7 +68,10 @@ public with sharing class TriggerHelper {
         for (pizza__c toAdjust : triggerlist){
             if (Trigger.isInsert){
                 pricedifferences.put(toAdjust.shopping_cart__c, toAdjust.price__c);
-            } else {
+            } else if (Trigger.isDelete){
+                pricedifferences.put(toAdjust.shopping_cart__c, (toAdjust.price__c * -1));
+            }
+            else{
                 if (toAdjust.price__c != triggermap.get(toAdjust.id).price__c){
                     pricedifferences.put(toAdjust.shopping_cart__c, toAdjust.price__c - triggermap.get(toAdjust.id).price__c);
                 }

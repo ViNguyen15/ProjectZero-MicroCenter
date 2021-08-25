@@ -8,16 +8,19 @@ trigger PizzaTrigger on Pizza__C (before insert, before update, before delete, a
         when BEFORE_UPDATE { 
             TriggerHelper.updatePrice(Trigger.new);
         }
+        //TODO: Update cart when pizza is deleted
         when BEFORE_DELETE { 
+            TriggerHelper.updateShoppingCart(Trigger.old, Trigger.oldMap);
         }
         when AFTER_INSERT { 
-            updateShoppingCart(Trigger.new, Trigger.oldMap);
+            TriggerHelper.updateShoppingCart(Trigger.new, Trigger.oldMap);
         }
         when AFTER_UPDATE {
-            updateShoppingCart(Trigger.new, Trigger.oldMap);
+            TriggerHelper.updateShoppingCart(Trigger.new, Trigger.oldMap);
         }
         when AFTER_DELETE { 
         }
+        //TODO: Update cart when pizza is undeleted
         when AFTER_UNDELETE {
             
         }
