@@ -30,6 +30,16 @@ public class TestCartPriceUpdate {
         carts = [SELECT id, total_cost__c FROM shopping_cart__c];
         //Testing if cart price works on pizza updates
         System.assertEquals(startCost+16, carts[0].total_cost__c);
+        //Deleting pizza from cart, price $16
+        delete testPizza;
+        carts = [SELECT id, total_cost__c FROM shopping_cart__c];
+        //Testing if cart price works on pizza deletions
+        System.assertEquals(startCost, carts[0].total_cost__c);
+        //Undeleting pizza from cart, price $16
+        undelete testPizza;
+        carts = [SELECT id, total_cost__c FROM shopping_cart__c];
+        //Testing if cart price works on pizza undeletions
+        System.assertEquals(startCost+16, carts[0].total_cost__c);
         Test.stopTest();
     }
 }
