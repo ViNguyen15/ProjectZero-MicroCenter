@@ -106,7 +106,9 @@ public with sharing class TriggerHelper {
             }
         }
         for (shopping_cart__c currCart : notReady){
-            cartList.remove(cartList.indexOf(currCart));
+            if (cartList.indexOf(currCart) != -1){
+                cartList.remove(cartList.indexOf(currCart));
+            }
         }
 
         update cartList;
