@@ -1,0 +1,161 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 6,
+    "passing": 3,
+    "failing": 3,
+    "skipped": 0,
+    "passRate": "50%",
+    "failRate": "50%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Aug 25 2021 10:36:17 AM",
+    "testExecutionTimeInMs": 135151,
+    "testTotalTimeInMs": 135151,
+    "commandTimeInMs": 286,
+    "hostname": "https://resilient-unicorn-yxre7-dev-ed.my.salesforce.com",
+    "orgId": "00D5e000005A1scEAC",
+    "username": "awensley@resilient-unicorn-yxre7.com",
+    "testRunId": "7075e00001QiK7z",
+    "userId": "0055e000006TiBJAA0"
+  },
+  "tests": [
+    {
+      "id": "07M5e0000015BEvEAM",
+      "queueItemId": "7095e000000AsDmAAK",
+      "stackTrace": "Class.PreventDuplicates.checkDuplicates: line 25, column 1\nClass.PreventDuplicates.handleFriendsList: line 4, column 1\nTrigger.FriendsListTriggers: line 4, column 1",
+      "message": "System.LimitException: Apex CPU time limit exceeded",
+      "asyncApexJobId": "7075e00001QiK7zAAF",
+      "methodName": "TBcreateMirrors",
+      "outcome": "Fail",
+      "apexLogId": "07L5e000002uAWxEAM",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 45710,
+      "testTimestamp": "2021-08-25T14:36:19.000+0000",
+      "fullName": "TestFriendsListHandler.TBcreateMirrors",
+      "diagnostic": {
+        "exceptionMessage": "System.LimitException: Apex CPU time limit exceeded",
+        "exceptionStackTrace": "Class.PreventDuplicates.checkDuplicates: line 25, column 1\nClass.PreventDuplicates.handleFriendsList: line 4, column 1\nTrigger.FriendsListTriggers: line 4, column 1",
+        "className": "PreventDuplicates",
+        "compileProblem": "",
+        "lineNumber": 25,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M5e0000015BEwEAM",
+      "queueItemId": "7095e000000AsDmAAK",
+      "stackTrace": "Class.FriendsListHandler.isDuplicate: line 47, column 1\nClass.FriendsListHandler.hasDuplicates: line 30, column 1\nClass.FriendsListHandler.duplicatesList: line 20, column 1\nClass.FriendsListHandler.deleteMirrors: line 10, column 1\nTrigger.FriendsListTriggers: line 19, column 1",
+      "message": "System.LimitException: Apex CPU time limit exceeded",
+      "asyncApexJobId": "7075e00001QiK7zAAF",
+      "methodName": "TBdeleteMirrors",
+      "outcome": "Fail",
+      "apexLogId": "07L5e000002uAWxEAM",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 43098,
+      "testTimestamp": "2021-08-25T14:37:04.000+0000",
+      "fullName": "TestFriendsListHandler.TBdeleteMirrors",
+      "diagnostic": {
+        "exceptionMessage": "System.LimitException: Apex CPU time limit exceeded",
+        "exceptionStackTrace": "Class.FriendsListHandler.isDuplicate: line 47, column 1\nClass.FriendsListHandler.hasDuplicates: line 30, column 1\nClass.FriendsListHandler.duplicatesList: line 20, column 1\nClass.FriendsListHandler.deleteMirrors: line 10, column 1\nTrigger.FriendsListTriggers: line 19, column 1",
+        "className": "FriendsListHandler",
+        "compileProblem": "",
+        "lineNumber": 47,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M5e0000015BExEAM",
+      "queueItemId": "7095e000000AsDmAAK",
+      "stackTrace": "Class.PreventDuplicates.checkDuplicates: line 20, column 1\nClass.PreventDuplicates.handleFriendsList: line 4, column 1\nTrigger.FriendsListTriggers: line 4, column 1",
+      "message": "System.LimitException: Apex CPU time limit exceeded",
+      "asyncApexJobId": "7075e00001QiK7zAAF",
+      "methodName": "TBupdateMirrors",
+      "outcome": "Fail",
+      "apexLogId": "07L5e000002uAWxEAM",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 45058,
+      "testTimestamp": "2021-08-25T14:37:48.000+0000",
+      "fullName": "TestFriendsListHandler.TBupdateMirrors",
+      "diagnostic": {
+        "exceptionMessage": "System.LimitException: Apex CPU time limit exceeded",
+        "exceptionStackTrace": "Class.PreventDuplicates.checkDuplicates: line 20, column 1\nClass.PreventDuplicates.handleFriendsList: line 4, column 1\nTrigger.FriendsListTriggers: line 4, column 1",
+        "className": "PreventDuplicates",
+        "compileProblem": "",
+        "lineNumber": 20,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M5e0000015BEyEAM",
+      "queueItemId": "7095e000000AsDmAAK",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001QiK7zAAF",
+      "methodName": "TPcrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": "07L5e000002uAWxEAM",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 639,
+      "testTimestamp": "2021-08-25T14:38:33.000+0000",
+      "fullName": "TestFriendsListHandler.TPcrudMirrors"
+    },
+    {
+      "id": "07M5e0000015BEzEAM",
+      "queueItemId": "7095e000000AsDmAAK",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001QiK7zAAF",
+      "methodName": "TRUcrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": "07L5e000002uAWxEAM",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 224,
+      "testTimestamp": "2021-08-25T14:38:34.000+0000",
+      "fullName": "TestFriendsListHandler.TRUcrudMirrors"
+    },
+    {
+      "id": "07M5e0000015BF0EAM",
+      "queueItemId": "7095e000000AsDmAAK",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001QiK7zAAF",
+      "methodName": "TScrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": "07L5e000002uAWxEAM",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 422,
+      "testTimestamp": "2021-08-25T14:38:34.000+0000",
+      "fullName": "TestFriendsListHandler.TScrudMirrors"
+    }
+  ]
+}

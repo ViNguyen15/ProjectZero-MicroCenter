@@ -1,0 +1,153 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 6,
+    "passing": 4,
+    "failing": 2,
+    "skipped": 0,
+    "passRate": "67%",
+    "failRate": "33%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Aug 25 2021 10:48:47 AM",
+    "testExecutionTimeInMs": 143482,
+    "testTotalTimeInMs": 143482,
+    "commandTimeInMs": 475,
+    "hostname": "https://resilient-unicorn-yxre7-dev-ed.my.salesforce.com",
+    "orgId": "00D5e000005A1scEAC",
+    "username": "awensley@resilient-unicorn-yxre7.com",
+    "testRunId": "7075e00001QiS9H",
+    "userId": "0055e000006TiBJAA0"
+  },
+  "tests": [
+    {
+      "id": "07M5e0000015BG5EAM",
+      "queueItemId": "7095e000000AsE1AAK",
+      "stackTrace": "Class.FriendsListHandler.hasDuplicates: line 30, column 1\nClass.FriendsListHandler.duplicatesList: line 20, column 1\nClass.FriendsListHandler.createMirrors: line 4, column 1\nTrigger.FriendsListTriggers: line 7, column 1",
+      "message": "System.LimitException: Apex CPU time limit exceeded",
+      "asyncApexJobId": "7075e00001QiS9HAAV",
+      "methodName": "TBupdateMirrors",
+      "outcome": "Fail",
+      "apexLogId": "07L5e000002uAfSEAU",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 51021,
+      "testTimestamp": "2021-08-25T14:50:20.000+0000",
+      "fullName": "TestFriendsListHandler.TBupdateMirrors",
+      "diagnostic": {
+        "exceptionMessage": "System.LimitException: Apex CPU time limit exceeded",
+        "exceptionStackTrace": "Class.FriendsListHandler.hasDuplicates: line 30, column 1\nClass.FriendsListHandler.duplicatesList: line 20, column 1\nClass.FriendsListHandler.createMirrors: line 4, column 1\nTrigger.FriendsListTriggers: line 7, column 1",
+        "className": "FriendsListHandler",
+        "compileProblem": "",
+        "lineNumber": 30,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M5e0000015BG6EAM",
+      "queueItemId": "7095e000000AsE1AAK",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001QiS9HAAV",
+      "methodName": "TPcrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": "07L5e000002uAfSEAU",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 517,
+      "testTimestamp": "2021-08-25T14:51:11.000+0000",
+      "fullName": "TestFriendsListHandler.TPcrudMirrors"
+    },
+    {
+      "id": "07M5e0000015BG7EAM",
+      "queueItemId": "7095e000000AsE1AAK",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001QiS9HAAV",
+      "methodName": "TRUcrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": "07L5e000002uAfSEAU",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 224,
+      "testTimestamp": "2021-08-25T14:51:12.000+0000",
+      "fullName": "TestFriendsListHandler.TRUcrudMirrors"
+    },
+    {
+      "id": "07M5e0000015BHLEA2",
+      "queueItemId": "7095e000000AsE1AAK",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001QiS9HAAV",
+      "methodName": "TScrudMirrors",
+      "outcome": "Pass",
+      "apexLogId": "07L5e000002uAfSEAU",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 407,
+      "testTimestamp": "2021-08-25T14:51:12.000+0000",
+      "fullName": "TestFriendsListHandler.TScrudMirrors"
+    },
+    {
+      "id": "07M5e0000015BG3EAM",
+      "queueItemId": "7095e000000AsE1AAK",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7075e00001QiS9HAAV",
+      "methodName": "TBcreateMirrors",
+      "outcome": "Pass",
+      "apexLogId": "07L5e000002uAfSEAU",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 41758,
+      "testTimestamp": "2021-08-25T14:48:48.000+0000",
+      "fullName": "TestFriendsListHandler.TBcreateMirrors"
+    },
+    {
+      "id": "07M5e0000015BG4EAM",
+      "queueItemId": "7095e000000AsE1AAK",
+      "stackTrace": "Class.FriendsListHandler.hasDuplicates: line 30, column 1\nClass.FriendsListHandler.duplicatesList: line 20, column 1\nClass.FriendsListHandler.deleteMirrors: line 10, column 1\nTrigger.FriendsListTriggers: line 19, column 1",
+      "message": "System.LimitException: Apex CPU time limit exceeded",
+      "asyncApexJobId": "7075e00001QiS9HAAV",
+      "methodName": "TBdeleteMirrors",
+      "outcome": "Fail",
+      "apexLogId": "07L5e000002uAfSEAU",
+      "apexClass": {
+        "id": "01p5e00000a1IBNAA2",
+        "name": "TestFriendsListHandler",
+        "namespacePrefix": null,
+        "fullName": "TestFriendsListHandler"
+      },
+      "runTime": 49555,
+      "testTimestamp": "2021-08-25T14:49:30.000+0000",
+      "fullName": "TestFriendsListHandler.TBdeleteMirrors",
+      "diagnostic": {
+        "exceptionMessage": "System.LimitException: Apex CPU time limit exceeded",
+        "exceptionStackTrace": "Class.FriendsListHandler.hasDuplicates: line 30, column 1\nClass.FriendsListHandler.duplicatesList: line 20, column 1\nClass.FriendsListHandler.deleteMirrors: line 10, column 1\nTrigger.FriendsListTriggers: line 19, column 1",
+        "className": "FriendsListHandler",
+        "compileProblem": "",
+        "lineNumber": 30,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

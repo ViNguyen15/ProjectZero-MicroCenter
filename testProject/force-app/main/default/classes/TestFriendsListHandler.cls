@@ -43,8 +43,8 @@ public class TestFriendsListHandler {
     static void TBcreateMirrors() {
         Test.startTest();
         
-        Insert createRecords(200, 175);
-        System.assertEquals(new List<Integer>{400, 175}, tallyAcceptedAndNot());
+        Insert createRecords(175, 175);
+        System.assertEquals(new List<Integer>{350, 175}, tallyAcceptedAndNot());
         Test.stopTest();
     }
 
@@ -52,9 +52,9 @@ public class TestFriendsListHandler {
     static void TBupdateMirrors() {
         
         Test.startTest();
-        Insert createRecords(200, 100);
+        Insert createRecords(0, 175);
         Update updateRecords();
-        System.assertEquals(new List<Integer>{600, 0}, tallyAcceptedAndNot());
+        System.assertEquals(new List<Integer>{350, 0}, tallyAcceptedAndNot());
 
         Test.stopTest();
     }
@@ -64,9 +64,9 @@ public class TestFriendsListHandler {
     static void TBdeleteMirrors() {
         Test.startTest();
 
-        Insert createRecords(200, 100);
+        Insert createRecords(200, 0);
 		Delete deleteRecords(175);
-		System.assertEquals(new List<Integer>{50, 100}, tallyAcceptedAndNot());
+		System.assertEquals(new List<Integer>{50, 0}, tallyAcceptedAndNot());
         
         Test.stopTest();
     }
