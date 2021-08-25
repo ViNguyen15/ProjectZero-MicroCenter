@@ -6,6 +6,11 @@ public class TestAutoPriceChange {
         for (Integer i = 0; i < 50; i++){
             testPizzas.add(new Pizza__c(size__c = SizeHelper(math.mod(i,4)), toppings__c = ToppingsHelper(math.mod(i,2)), recordTypeID = specialHelper(math.mod(i, 8))));
         }
+        for (Pizza__c curr : testPizzas){
+            if (curr.RecordTypeID == '0125e000000uuaAAAQ'){
+                curr.toppings__c = ToppingsHelper(500);
+            }
+        }
         Insert testPizzas;
     }
     
@@ -105,6 +110,9 @@ public class TestAutoPriceChange {
             }
             when 1 {
                 result = 'pepporoni';
+            }
+            when 500 {
+                result = 'pepporoni;sausage';
             }
         }
         return result;

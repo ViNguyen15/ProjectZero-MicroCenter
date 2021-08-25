@@ -16,8 +16,8 @@ trigger PizzaTrigger on Pizza__C (before insert, before update, before delete, a
             TriggerHelper.updateShoppingCart(Trigger.new, Trigger.oldMap);
         }
         when AFTER_UPDATE {
+            TriggerHelper.checkIfOrderIsReady(Trigger.new);
             TriggerHelper.updateShoppingCart(Trigger.new, Trigger.oldMap);
-            TriggerHelper.checkIfOrderIsReady();
         }
         when AFTER_DELETE { 
         }

@@ -8,6 +8,11 @@ public class TestCartPriceUpdate {
         for (Integer i = 0; i < 10; i++){
             testPizzas.add(new Pizza__c(shopping_cart__c = testCart.id, size__c = TestAutoPriceChange.SizeHelper(math.mod(i,4)), toppings__c = TestAutoPriceChange.ToppingsHelper(math.mod(i,2)), recordTypeID = TestAutoPriceChange.specialHelper(math.mod(i, 8))));
         }
+        for (Pizza__c curr : testPizzas){
+            if (curr.RecordTypeID == '0125e000000uuaAAAQ'){
+                curr.toppings__c = TestAutoPriceChange.ToppingsHelper(500);
+            }
+        }
         insert testAccount;
         insert testCart;
         insert testPizzas;

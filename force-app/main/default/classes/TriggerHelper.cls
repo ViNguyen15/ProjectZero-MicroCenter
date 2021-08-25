@@ -11,10 +11,11 @@ public with sharing class TriggerHelper {
             }
         }
     }
-    //Sets cart total cost to 0 upon creation
+    //Sets cart total cost to 0 upon creation and sets order is ready to false
     public static void setCostToZero(list<Shopping_Cart__c> triggerlist){
         for (shopping_cart__c cart : triggerlist){
             cart.Total_Cost__c = 0;
+            cart.Order_is_Ready__c = false;
         }
     }
     
@@ -87,19 +88,27 @@ public with sharing class TriggerHelper {
 
     //Updates shopping cart's "Order_is_Ready__c" field based on whether or not all of the pizzas in it is finished.
 
-    public static void checkIfOrderIsReady(){
-        List<Pizza__C> pizzaList = [SELECT id, isFinished__c FROM Pizza__C];
+    public static void checkIfOrderIsReady(list<pizza__c> triggerlist){
+
+        List<Pizza__C> pizzaList = [SELECT id, isFinished__c, shopping_cart__c FROM Pizza__C];
         List<shopping_cart__c> cartList = [SELECT id, Order_is_Ready__c FROM Shopping_cart__c];
+        //Carts are updated to all be ready;
+        for (Shopping_Cart__c currCart : cartList){
+            currCart.Order_is_Ready__c = true;
+        }
+        List<Shopping_cart__c> notReady = new List<Shopping_cart__c>();
         //Carts are removed from cartList if any of their pizzas is not ready
         for (Pizza__c currPizza : pizzaList){
             for (Shopping_cart__c currCart : cartList){
-                if (currPizza.shopping_cart__c = currCart.id && !currPizza.isFinished__c){
-                    cartList.remove(currCart);
+                if ((currPizza.shopping_cart__c == currCart.id) && !currPizza.isFinished__c){
+                    notReady.add(currCart);
                 }
-                currCart.Order_is_Ready__c = true;
             }
         }
-        
+        for (shopping_cart__c currCart : notReady){
+            cartList.remove(cartList.indexOf(currCart));
+        }
+
         update cartList;
 
     }
