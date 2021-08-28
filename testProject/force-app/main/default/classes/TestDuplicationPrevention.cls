@@ -240,7 +240,19 @@ public class TestDuplicationPrevention {
         Test.stopTest();
     }
     
-    
+    static void insertRecords(String type, Integer numRecords, Integer delete1, Integer delete2) {
+        switch on (type) {
+            when ('Friends List') {
+                insertRecords(Friends_List__c.sObjectType, 'Contact1__c', Contact.sObjectType, ' ORDER BY lastname', 'Contact2__c', Contact.sObjectType, ' ORDER BY lastname', numRecords, true, delete1, delete2);
+            }
+            when ('Group Member') {
+                insertRecords(Group_Member__c.sObjectType, 'Contact__c', Contact.sObjectType, ' ORDER BY lastname', 'Group__c', Group__c.sObjectType, ' ORDER BY Name', numRecords, true, delete1, delete2);
+            }
+            when ('Like List') {
+                insertRecords(Like_List__c.sObjectType, 'Contact__c', Contact.sObjectType, ' ORDER BY lastname', 'Post__c', Post__c.sObjectType, ' ORDER BY Contents__c', numRecords, true, delete1, delete2);
+            }
+        }
+    }
     
     
     static void insertRecords(sObjectType type, String field1, sObjectType type1, String order1, String field2, sObjectType type2, string order2, Integer numRecords, Boolean identical, Integer delete1, Integer delete2) {
@@ -273,19 +285,5 @@ public class TestDuplicationPrevention {
         }
         Insert output; 
     }    
-    
-    static void insertRecords(String type, Integer numRecords, Integer delete1, Integer delete2) {
-        switch on (type) {
-            when ('Friends List') {
-                insertRecords(Friends_List__c.sObjectType, 'Contact1__c', Contact.sObjectType, ' ORDER BY lastname', 'Contact2__c', Contact.sObjectType, ' ORDER BY lastname', numRecords, true, delete1, delete2);
-            }
-            when ('Group Member') {
-                insertRecords(Group_Member__c.sObjectType, 'Contact__c', Contact.sObjectType, ' ORDER BY lastname', 'Group__c', Group__c.sObjectType, ' ORDER BY Name', numRecords, true, delete1, delete2);
-            }
-            when ('Like List') {
-                insertRecords(Like_List__c.sObjectType, 'Contact__c', Contact.sObjectType, ' ORDER BY lastname', 'Post__c', Post__c.sObjectType, ' ORDER BY Contents__c', numRecords, true, delete1, delete2);
-            }
-        }
-    }
     
 }
